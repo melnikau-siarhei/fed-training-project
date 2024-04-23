@@ -1,3 +1,7 @@
+.most-popular-articles-container {
+    max-width: 1240px;
+    margin: 0 auto;
+}
 .most-popular-articles-header {
   flex: 0 0 auto;
   width: 1320px;
