@@ -35,7 +35,7 @@
 		path = data.dataset.path;
 	}
 
-	fetch('../public/data.json')
+	fetch('./public/data.json')
     	.then(response => {
     	    if (!response.ok) {
     	    	throw new Error('Network response was not ok');
