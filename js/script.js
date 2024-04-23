@@ -46,7 +46,7 @@
     .then(jsonData => {
         console.log(jsonData);
         if(jsonData) {
-            let articles = jsonData.most-popular-articles;
+            let articles = jsonData.mostPopularArticles;
             articles.forEach( article => {
                 mostPopularArticlesMarkup += getArticleMarkup(article);
             });
@@ -64,14 +64,14 @@
                         <img alt="image" src="${article.image}" class="article-card-image"/>
                         <div class="article-card-text-container">
                             <span class="article-card-title">
-                                <span>${article.article-card-title}</span>
+                                <span>${article.articleCardTitle}</span>
                             </span>
                             <span class="article-card-subtitle">
-                                <span>${article.article-card-subtitle}</span>
+                                <span>${article.articleCardSubtitle}</span>
                             </span>
                             <span class="article-card-text">
                                 <span>
-                                    ${article.article-card-text}
+                                    ${article.articleCardText}
                                 </span>
                             </span>
                         </div>
