@@ -50,8 +50,8 @@
             articles.forEach( article => {
                 mostPopularArticlesMarkup += getArticleMarkup(article);
             });
-            let ttt = mostPopularArticlesMarkup;
-            console.log(ttt);
+            console.log(mostPopularArticlesMarkup);
+            document.querySelector("#most-popular-articles").innerHTML = mostPopularArticlesMarkup;
         }
     })
     .catch(error => {
