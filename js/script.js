@@ -5,6 +5,7 @@
 	let subtitle;
 	let buttonName;
 	let path;
+	let mostPopularArticlesMarkup = "";
 
     extractData();
     createMarkup();
@@ -36,17 +37,47 @@
 	}
 
 	fetch('./public/data.json')
-    	.then(response => {
-    	    if (!response.ok) {
-    	    	throw new Error('Network response was not ok');
-    	    }
-        	return response.json();
-    	})
-    	.then(jsonData => {
-    		console.log(jsonData);
-    	})
-    	.catch(error => {
-    		console.error('Fetch error:', error);
-    	});
+    .then(response => {
+        if (!response.ok) {
+            throw new Error('Network response was not ok');
+        }
+        return response.json();
+    })
+    .then(jsonData => {
+        console.log(jsonData);
+        if(jsonData) {
+            let articles = jsonData.most-popular-articles;
+            articles.forEach( article => {
+                mostPopularArticlesMarkup += getArticleMarkup(article);
+            });
+            let ttt = mostPopularArticlesMarkup;
+            console.log(ttt);
+        }
+    })
+    .catch(error => {
+        console.error('Fetch error:', error);
+    });
+
+    function getArticleMarkup(article) {
+        return `<div class="article-container">
+                    <div class="article-post-card">
+                        <img alt="image" src="${article.image}" class="article-card-image"/>
+                        <div class="article-card-text-container">
+                            <span class="article-card-title">
+                                <span>${article.article-card-title}</span>
+                            </span>
+                            <span class="article-card-subtitle">
+                                <span>${article.article-card-subtitle}</span>
+                            </span>
+                            <span class="article-card-text">
+                                <span>
+                                    ${article.article-card-text}
+                                </span>
+                            </span>
+                        </div>
+                    </div>
+                </div>`;
+    }
+
 
 })();
