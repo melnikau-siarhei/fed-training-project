@@ -60,22 +60,24 @@
 
     function getArticleMarkup(article) {
         return `<div class="article-container">
-                    <div class="article-post-card">
-                        <img alt="image" src="${article.image}" class="article-card-image"/>
-                        <div class="article-card-text-container">
-                            <span class="article-card-title">
-                                <span>${article.articleCardTitle}</span>
-                            </span>
-                            <span class="article-card-subtitle">
-                                <span>${article.articleCardSubtitle}</span>
-                            </span>
-                            <span class="article-card-text">
-                                <span>
-                                    ${article.articleCardText}
+                    <a href="${article.link}">
+                        <div class="article-post-card">
+                            <img alt="image" src="${article.image}" class="article-card-image"/>
+                            <div class="article-card-text-container">
+                                <span class="article-card-title">
+                                    <span>${article.articleCardTitle}</span>
                                 </span>
-                            </span>
+                                <span class="article-card-subtitle">
+                                    <span>${article.articleCardSubtitle}</span>
+                                </span>
+                                <span class="article-card-text">
+                                    <span>
+                                        ${article.articleCardText}
+                                    </span>
+                                </span>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>`;
     }
 

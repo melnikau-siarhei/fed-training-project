@@ -1,18 +1,21 @@
 {
   "mostPopularArticles": [
     {
+      "link": "https://www.google.com/",
       "image": "https://images.unsplash.com/photo-1547841243-eacb14453cd9?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDIyfHxjaXR5fGVufDB8fHx8MTYyNjE4NjYxMg&amp;ixlib=rb-1.2.1&amp;w=1000",
       "articleCardTitle": "ENTERPRISE",
       "articleCardSubtitle": "Lorem ipsum dolor sit amet",
       "articleCardText": "Lorem ipsum dolor sit amet, consectetur, adipiscing elit. Sed non volutpat turpis. Mauris luctus rutrum mi utrhoncus. Integer in dignissim tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
     },
     {
+      "link": "https://www.google.com/",
       "image": "https://images.unsplash.com/photo-1465925508512-1e7052bb62e6?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDIzfHxjaXR5JTIwY2FifGVufDB8fHx8MTYyNjQ1MDMwNA&amp;ixlib=rb-1.2.1&amp;h=1200",
       "articleCardTitle": "ENTERPRISE",
       "articleCardSubtitle": "Lorem ipsum dolor sit amet",
       "articleCardText": "Lorem ipsum dolor sit amet, consectetur, adipiscing elit. Sed non volutpat turpis. Mauris luctus rutrum mi utrhoncus. Integer in dignissim tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
     },
     {
+      "link": "https://www.google.com/",
       "image": "https://images.unsplash.com/photo-1464938050520-ef2270bb8ce8?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDE4fHxjaXR5fGVufDB8fHx8MTYyNjQ1MDI4MQ&amp;ixlib=rb-1.2.1&amp;h=1200",
       "articleCardTitle": "ENTERPRISE",
       "articleCardSubtitle": "Lorem ipsum dolor sit amet",
