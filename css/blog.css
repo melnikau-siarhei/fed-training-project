@@ -1,11 +1,17 @@
 .hidden{
     display: none;
 }
+.load-more-container {
+    width: 100%
+    padding-bottom: 40px;
+}
 #loadMore {
-    max-width: 1400px;
+    max-width: 100px;
     margin: 0 auto;
     cursor: pointer;
-
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 20px;
 }
 .blog-post-card1-blog-post-card {
   width: 100%;
