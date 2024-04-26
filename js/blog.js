@@ -34,7 +34,7 @@
 
         function lazyLoad() {
             let start = loadedChunks * chunkSize;
-            let end = Math.min(start + chunkSize, items.length);
+            let end = Math.min(start + chunkSize, blogArticles.length);
             let itemElementMarkup = '';
             for (let i = start; i < end; i++) {
               itemElementMarkup += getArticleCardMarkup(blogArticles[i]);
