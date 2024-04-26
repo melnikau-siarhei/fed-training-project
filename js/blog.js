@@ -10,10 +10,6 @@
 
 	    if(loadMoreButton) {
 	        loadMoreButton.addEventListener("click", lazyLoad);
-	        loadMoreButton.on("click", function(e){
-                e.preventDefault();
-                lazyLoad();
-            });
 	    }
 
 	    fetch('./public/blog.json')
