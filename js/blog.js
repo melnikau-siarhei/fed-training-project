@@ -39,6 +39,7 @@
             for (let i = start; i < end; i++) {
               itemElementMarkup += getArticleCardMarkup(blogArticles[i]);
             }
+            let nodeElement = document.createElement('div');
             contentContainer.appendChild(itemElementMarkup);
 
             loadedChunks++;
