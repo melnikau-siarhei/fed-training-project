@@ -1,7 +1,12 @@
 .hidden{
     display: none;
 }
+#loadMore {
+    max-width: 1400px;
+    margin: 0 auto;
+    cursor: pointer;
 
+}
 .blog-post-card1-blog-post-card {
   width: 100%;
   display: flex;
