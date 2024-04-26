@@ -1,7 +1,12 @@
 .hidden{
     display: none;
 }
+#loadMore {
+    max-width: 1400px;
+    margin: 0 auto;
+    cursor: pointer;
 
+}
 .blog-post-card1-blog-post-card {
   width: 100%;
   display: flex;
@@ -18,7 +23,7 @@
 }
 .blog-post-card1-image {
   width: 100%;
-  height: 100%;
+  height: 350px;
   object-fit: cover;
 }
 .blog-post-card1-container {
