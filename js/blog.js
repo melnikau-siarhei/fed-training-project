@@ -35,12 +35,12 @@
         function lazyLoad() {
             let start = loadedChunks * chunkSize;
             let end = Math.min(start + chunkSize, blogArticles.length);
-            let itemElementMarkup = '';
             for (let i = start; i < end; i++) {
-              itemElementMarkup += getArticleCardMarkup(blogArticles[i]);
+              let nodeElement = document.createElement('div');
+              nodeElement.innerHTML = getArticleCardMarkup(blogArticles[i]);
+              contentContainer.appendChild(nodeElement);
             }
-            let nodeElement = document.createElement('div');
-            contentContainer.appendChild(itemElementMarkup);
+
 
             loadedChunks++;
 
