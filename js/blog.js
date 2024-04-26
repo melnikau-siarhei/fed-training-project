@@ -10,6 +10,10 @@
 
 	    if(loadMoreButton) {
 	        loadMoreButton.addEventListener("click", lazyLoad);
+	        loadMoreButton.on("click", function(e){
+                e.preventDefault();
+                lazyLoad();
+            });
 	    }
 
 	    fetch('./public/blog.json')
@@ -49,11 +53,6 @@
               loadMoreButton.classList.add("hidden");
             }
         }
-
-        loadMoreButton.on("click", function(e){
-            e.preventDefault();
-            lazyLoad();
-        });
 
         function getArticleCardMarkup(articleCard) {
             return `
