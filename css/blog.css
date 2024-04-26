@@ -344,7 +344,7 @@
 .blog-icon11:hover {
   fill: var(--dl-color-orange-default);
 }
-.blog-blog {
+#blog-blog {
   width: 100%;
   display: flex;
   padding: 48px;
@@ -602,7 +602,7 @@
   }
 }
 @media(max-width: 991px) {
-  .blog-blog {
+  #blog-blog {
     flex-direction: column;
   }
   .blog-container07 {
@@ -632,7 +632,7 @@
   .blog-burger-menu {
     display: block;
   }
-  .blog-blog {
+  #blog-blog {
     padding-left: 32px;
     padding-right: 32px;
   }
@@ -655,7 +655,7 @@
   .blog-bot {
     width: 100%;
   }
-  .blog-blog {
+  #blog-blog {
     padding-top: 32px;
     padding-left: var(--dl-space-space-unit);
     padding-right: var(--dl-space-space-unit);
