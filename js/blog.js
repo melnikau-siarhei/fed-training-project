@@ -40,10 +40,7 @@
               nodeElement.innerHTML = getArticleCardMarkup(blogArticles[i]);
               contentContainer.appendChild(nodeElement);
             }
-
-
             loadedChunks++;
-
             if (end >= blogArticles.length) {
               // hide load more button
               loadMoreButton.classList.add("hidden");
@@ -52,24 +49,26 @@
 
         function getArticleCardMarkup(articleCard) {
             return `
-                <div class="blog-container07">
-                    <div class="blog-post-card1-blog-post-card blog-post-card1-root-class-name5">
-                        <img alt="image" src="${articleCard.image}" class="blog-post-card1-image"/>
-                        <div class="blog-post-card1-container">
-                            <span class="blog-post-card1-text">
-                                <span>${articleCard.articleCardTitle}</span>
-                            </span>
-                            <span class="blog-post-card1-text1">
-                                <span>${articleCard.articleCardSubtitle}</span>
-                            </span>
-                            <span class="blog-post-card1-text2">
-                                <span>
-                                    ${articleCard.articleCardText}
+                <a href="${articleCard.link}">
+                    <div class="blog-container07">
+                        <div class="blog-post-card1-blog-post-card blog-post-card1-root-class-name5">
+                            <img alt="image" src="${articleCard.image}" class="blog-post-card1-image"/>
+                            <div class="blog-post-card1-container">
+                                <span class="blog-post-card1-text">
+                                    <span>${articleCard.articleCardTitle}</span>
                                 </span>
-                            </span>
+                                <span class="blog-post-card1-text1">
+                                    <span>${articleCard.articleCardSubtitle}</span>
+                                </span>
+                                <span class="blog-post-card1-text2">
+                                    <span>
+                                        ${articleCard.articleCardText}
+                                    </span>
+                                </span>
+                            </div>
                         </div>
                     </div>
-                </div>
+                </a>
             `;
         }
     });
