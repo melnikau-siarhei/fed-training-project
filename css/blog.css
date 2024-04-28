@@ -369,6 +369,7 @@
   align-items: center;
   width: 350px;
   flex: auto;
+  cursor: pointer;
 }
 .blog-container08 {
   display: flex;
